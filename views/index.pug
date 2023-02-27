@@ -1,0 +1,55 @@
+//- index.pug
+doctype html
+html
+    head
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul 
+                div#logo
+                    img(src= "/static/daa.png")
+                    |DA 
+                li #[a(href='/') Home]
+                li #[a(href='/') about]
+                li #[a(href='/') contact]
+                li #[a(href='/') services]
+                li #[a(href='/') Info]
+        section#introSection  
+            div Welcome to dance academy
+            div.small Eat Sleep Dance Repeat 
+        section#missionSection
+            h2 Our Mission 
+            div.card
+                h3 Dance perfection
+                div.card-box
+                    div.card-img
+                        img(src="static/d2.png")
+                    div.card-content
+                        p This is best dance academy in india 
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="static/dad.png")
+                    div.card-content
+                        p This is best dance academy in india 
+            div.card
+                h3 Expert Teaching 
+                div.card-box
+                    div.card-img
+                        img(src="static/d3.png")
+                    div.card-content
+                        p This is best dance academy in india 
+        section#sponserSection  
+            h2 Our Sponser 
+            div#sponser
+                img(src="../static/aple.png", alt="sponser" class="Spimag")
+                img(src="../static/hp.png", alt="sponser" class="Spimag")
+                img(src="../static/dell.png", alt="sponser" class="Spimag")
+                img(src="../static/skype.png", alt="sponser" class="Spimag")
+        footer#footer   
+            |Copyright 	&copy; 2023 danceacademy.com | All right reserved.
+
+        script
+            include ../static/index.js
